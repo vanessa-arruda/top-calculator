@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.forth-row,
+.fifth-row{
+    display: flex;
+    width: 300px;
+    font-size: 48px;
+    
+}
+
+.first-row div,
+.second-row div,
+.third-row div,
+.forth-row div{
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.fifth-row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.fifth-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zero-container{
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin: 1px;
+}
+
+.special-container{
+    display: flex;
+}
+
+.special-container div{
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin: 1px;
+    text-align: center;
+    align-items: center;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.first,
+.operator,
+.number{
+    text-align: center;
+    align-items: center;
+}
+
+.display-container{
+    width: 295px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    background-color: lightgreen;
+    text-align: right;
+    margin: 1px;
+}
+
+.display-container p{
+    font-size: 48px;
+}
+
