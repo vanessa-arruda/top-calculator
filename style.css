@@ -1,14 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&family=Orbitron:wght@400;600&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #e7deea;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: #531792;
+}
+
 main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+}
+
+footer p{
+    padding: 4px;
+    color: #531792;
+}
+
+footer img{
+    margin: 4px;
+}
+
+footer img:hover{
+    cursor: pointer;
+}
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .first-row,
 .second-row,
 .third-row,
@@ -19,13 +57,12 @@ main{
     font-size: 48px;
     
 }
-
 .first-row div,
 .second-row div,
 .third-row div,
 .forth-row div{
     width: 25%;
-    border: 1px solid grey;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     margin: 1px;
     justify-content: center;
@@ -46,7 +83,7 @@ main{
 }
 
 .zero-container{
-    border: 1px solid grey;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     margin: 1px;
 }
@@ -56,7 +93,7 @@ main{
 }
 
 .special-container div{
-    border: 1px solid grey;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     margin: 1px;
     text-align: center;
@@ -76,15 +113,74 @@ p{
 }
 
 .display-container{
+    display: flex;
     width: 295px;
-    border: 2px solid grey;
+    border: 3px solid #ffffff;
     border-radius: 8px;
-    background-color: lightgreen;
-    text-align: right;
+    background-color: #d67fd4;
+    color: #fff;
     margin: 1px;
+    justify-content: end;
 }
 
 .display-container p{
-    font-size: 48px;
+    font-size: 44px;
+    height: 60px;
+    font-family: 'Orbitron', sans-serif;
 }
 
+.number{
+    color: #fff;
+    background-color:#d7318a;
+}
+
+.zero-container{
+    background-color: #d7318a;
+}
+
+.operator{
+    color: #fff;
+    background-color:#85419c;
+}
+
+.btns{
+    color: #fff;
+    background-color:#5a16a2;
+}
+
+.result{
+    color: #fff;
+    background-color:#c887c7;
+}
+
+
+/* hover effects */
+
+.number:hover{
+    color: #fff;
+    background-color:#d54c95;
+    cursor: pointer;
+}
+
+.zero-container:hover{
+    background-color: #d64994;
+    cursor: pointer;
+}
+
+.operator:hover{
+    color: #fff;
+    background-color:#8b569d;
+    cursor: pointer;
+}
+
+.btns:hover{
+    color: #fff;
+    background-color:#6a33a5;
+    cursor: pointer;
+}
+
+.result:hover{
+    color: #fff;
+    background-color:#d393d2;
+    cursor: pointer;
+}
