@@ -33,10 +33,13 @@ footer{
 footer p{
     padding: 4px;
     color: #531792;
+    font-size: 18px;
 }
 
 footer img{
     margin: 4px;
+    width: 20px;
+    height: auto;
 }
 
 footer img:hover{
@@ -54,14 +57,14 @@ footer img:hover{
 .fifth-row{
     display: flex;
     width: 300px;
-    font-size: 48px;
-    
 }
-.first-row div,
-.second-row div,
-.third-row div,
-.forth-row div{
+
+.first-row button,
+.second-row button,
+.third-row button,
+.forth-row button{
     width: 25%;
+    height: 50px;
     border: 1px solid #ffffff;
     border-radius: 8px;
     margin: 1px;
@@ -73,7 +76,6 @@ footer img:hover{
     justify-content: center;
     align-items: center;
     width: 50%;
-
 }
 
 .fifth-row{
@@ -83,21 +85,34 @@ footer img:hover{
 }
 
 .zero-container{
-    border: 2px solid #ffffff;
     border-radius: 8px;
     margin: 1px;
+}
+
+.zero-container button{
+    border: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+
 }
 
 .special-container{
     display: flex;
 }
 
-.special-container div{
-    border: 2px solid #ffffff;
+.special-container button{
     border-radius: 8px;
     margin: 1px;
     text-align: center;
     align-items: center;
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 50%;
+}
+
+button{
+    font-size: 28px;
 }
 
 p{
@@ -115,17 +130,18 @@ p{
 .display-container{
     display: flex;
     width: 295px;
+    height: 70px;
     border: 3px solid #ffffff;
     border-radius: 8px;
     background-color: #d67fd4;
     color: #fff;
     margin: 1px;
     justify-content: end;
+    align-items: center ;
 }
 
 .display-container p{
-    font-size: 44px;
-    height: 60px;
+    font-size: 36px;
     font-family: 'Orbitron', sans-serif;
 }
 
