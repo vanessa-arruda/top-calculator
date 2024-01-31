@@ -21,6 +21,7 @@ const percentage = document.getElementById("percentage");
 const plusMinus = document.getElementById("plus-minus");
 const subtract = document.getElementById("subtract");
 const sum = document.getElementById("sum");
+const maxDisplayWidth = 11;
 
 // number buttons
 zero.addEventListener("click", () => displayNumber("0"));
@@ -54,8 +55,13 @@ clearBtn.addEventListener("click", clearOperation);
 
 //calculator functions (operations)
 //link each button with right value output
+
 function displayNumber(value) {
-    display.innerHTML += value;
+    if (display.innerHTML.length < maxDisplayWidth) {
+        display.innerHTML += value;
+    } else {
+        display.innerHTML = display.innerHTML.substring(0, maxDisplayWidth); // Truncate
+    }
 }
 
 function setOperator(symbol) {
