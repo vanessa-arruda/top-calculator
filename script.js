@@ -1,4 +1,4 @@
-// number variables
+//calculator number variables
 const zero = document.getElementById("zero");
 const one = document.getElementById("one");
 const two = document.getElementById("two");
@@ -10,7 +10,7 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
-//operators and display variables
+//calculator operators and display variables
 const clearBtn = document.getElementById("clear");
 const decimal = document.getElementById("decimal");
 const display = document.getElementById("display-content"); 
@@ -23,6 +23,11 @@ const subtract = document.getElementById("subtract");
 const sum = document.getElementById("sum");
 const maxDisplayWidth = 11;
 
+let num1 = "";
+let num2 = "";
+let operator;
+
+//event listeners
 // number buttons
 zero.addEventListener("click", () => displayNumber("0"));
 one.addEventListener("click", () => displayNumber("1"));
@@ -37,11 +42,6 @@ nine.addEventListener("click", () => displayNumber("9"));
 decimal.addEventListener("click", () => displayNumber("."));
 plusMinus.addEventListener("click", toggleMinusPlus);
 
-
-let num1 = "";
-let num2 = "";
-let operator;
-
 // operators
 sum.addEventListener("click", () => setOperator("+"));
 subtract.addEventListener("click", () => setOperator("-"));
@@ -52,6 +52,7 @@ equals.addEventListener("click", performCalc);
 
 // clear button
 clearBtn.addEventListener("click", clearOperation);
+
 
 //calculator functions (operations)
 //link each button with right value output
@@ -113,3 +114,24 @@ function clearOperation() {
 }
 
 // color-theme functions
+//toggle theme variables
+const toggleBtn = document.getElementById("toggle-btn");
+const numberClass = document.querySelectorAll(".number");
+const operatorClass = document.querySelectorAll(".operator");
+const firstBtns = document.querySelectorAll(".first");
+const displayClass = document.querySelector(".display-container");
+const equalsBtn = document.querySelector(".result");
+
+toggleBtn.addEventListener("click", () => {
+    numberClass.forEach(NumEl => {
+        NumEl.classList.toggle("matrix");
+    });
+    operatorClass.forEach(opEl => {
+        opEl.classList.toggle("op-matrix");
+    });
+    firstBtns.forEach(firstEl => {
+        firstEl.classList.toggle("first-matrix");
+    });
+    displayClass.classList.toggle("matrix");
+    equalsBtn.classList.toggle("eq-matrix");
+});
