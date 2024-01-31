@@ -129,7 +129,7 @@ p{
 
 .display-container{
     display: flex;
-    width: 295px;
+    width: 296px;
     height: 70px;
     border: 3px solid #ffffff;
     border-radius: 8px;
@@ -141,7 +141,7 @@ p{
 }
 
 .display-container p{
-    font-size: 36px;
+    font-size: 32px;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -199,4 +199,11 @@ p{
     color: #fff;
     background-color:#d393d2;
     cursor: pointer;
+}
+
+/* additional color-themes */
+/* matrix - on going */
+.display-container-matrix{
+    background-color: #000000;
+    color: #99ff00;
 }
