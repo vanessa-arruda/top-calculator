@@ -37,10 +37,19 @@ footer p{
     font-size: 16px;
 }
 
-footer img{
-    margin: 4px;
+.sm-logo-container{
+    margin-top: 8px;
+}
+
+svg path{
     width: 20px;
     height: auto;
+    fill: #d67fd4;
+}
+
+a{
+    text-decoration: none;
+    padding: 4px;
 }
 
 footer img:hover{
@@ -170,7 +179,6 @@ p{
     background-color:#c887c7;
 }
 
-
 /* hover effects */
 
 .number:hover{
@@ -210,7 +218,6 @@ p{
     padding: 4px;
     background-color: #757575;
     color: white;
-
 }
 
 span{
@@ -244,9 +251,13 @@ span{
 }
 
 .body-bg-matrix{
-    background-color: #3f3f3f;
+    background-color: #525252;
 }
 
 .text-matrix{
     color: #ffffff;
+}
+
+svg.sm-logo-matrix path{
+    fill: #13de00;
 }

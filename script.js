@@ -122,6 +122,7 @@ const firstBtns = document.querySelectorAll(".first");
 const displayClass = document.querySelector(".display-container");
 const equalsBtn = document.querySelector(".result");
 const texts = document.querySelectorAll(".text-color");
+const smLogos = document.querySelectorAll(".sm-logo");
 
 toggleBtn.addEventListener("click", () => {
     numberClass.forEach(NumEl => {
@@ -135,9 +136,12 @@ toggleBtn.addEventListener("click", () => {
     });
     texts.forEach(textEl => {
         textEl.classList.toggle("text-matrix");
-    })
+    });
     displayClass.classList.toggle("matrix");
     equalsBtn.classList.toggle("eq-matrix");
     document.body.classList.toggle("body-bg-matrix");
-    
+    smLogos.forEach(svgEl => {
+        svgEl.classList.toggle("sm-logo-matrix");
+    });
+
 });
