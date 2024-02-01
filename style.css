@@ -216,8 +216,14 @@ p{
     font-size: 14px;
     margin: 4px;
     padding: 4px;
-    background-color: #757575;
+    background-color: #cfc7c7;
     color: white;
+}
+
+#toggle-btn:hover{
+    color: #f1f1f1;
+    background-color:#a6a6a6;
+    cursor: pointer;
 }
 
 span{
